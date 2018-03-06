@@ -1,0 +1,28 @@
+{% extends 'flexo187/base.html' %}
+{% block content %}
+    <div class="post">
+        {% if picture.UPLOADED_DATE %}
+            <div class="one_image">
+				<p><img src="/media/{{ picture.IMAGE }}"/></p>
+			</div>
+			<div class="description">
+				<div class="date">
+					<p>{{ picture.UPLOADED_DATE }}</p>
+				</div>
+				<div class="inscription" id="auth1">
+					<p>Загрузил: </p>
+				</div>
+				<div class="author">
+					<p>{{ picture.AUTHOR }}</p>
+				</div>
+				<div class="inscription" id="comm1">
+					<p>Комментарий: </p>
+				</div>
+				<div>
+					<p>{{ picture.COMMENT|linebreaksbr }}</p>
+				</div>
+			</div>
+			<a
+        {% endif %}
+    </div>
+{% endblock %}

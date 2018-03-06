@@ -1,0 +1,81 @@
+.record
+{
+	position: relative;
+	outline: 1px solid #000;
+	width: 1100px;
+	background-color: #A9A9A9;
+	font-family: 'Times New Roman';
+	padding: 20px 20px 20px 40px;
+}
+
+.inscription
+{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#comm
+{
+	position: absolute;
+	left: 200px;
+	top: 25px;
+}
+
+.comment
+{
+	position: absolute;
+	height: 240px;
+	width: 840px;
+	left: 160px;
+	top: 50px;
+	outline: 1px solid #000;
+	background-color: #FFFFFF;
+	margin-left: 40px;
+	
+}
+
+.description
+{
+	outline: 1px solid #000;
+	position: relative;
+	padding: 20px 20px 20px 40px;
+}
+
+
+
+.page-header {
+    background-color: #ADFF2F;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #828282;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 20pt;
+    margin-right: 20px;
+}

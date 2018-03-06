@@ -1,0 +1,36 @@
+{% extends 'flexo187/base.html' %}
+{% block content %}
+	<div id="actions">
+		<a href="{% url 'post_new'%}">Добавить изображение</a></h1>
+	</div>
+    {% for picture in pictures %} 
+        <div class="record">
+            <div class="image">
+				<p><a href="{% url 'post_detail' pk=picture.pk %}">
+						<img height="100" src="/media/{{ picture.IMAGE }}" width="100" />
+				</a></p>
+			</div>
+			<div class="inscription" id="update">
+				<p>Дата загрузки: </p>
+			</div>
+			<div class="date">
+                <p>{{ picture.UPLOADED_DATE }}</p>
+            </div>
+			<div class="inscription" id="auth">
+				<p>Загрузил: </p>
+			</div>
+			<div class="author">
+				<p>{{ picture.AUTHOR }}</p>
+			</div>
+			<div>
+				<a href="{% url 'post_edit' pk=picture.pk %}">Редактировать</a></h1>
+			</div>
+			<div class="inscription" id="comm">
+				<p>Комментарий: </p>
+			</div>
+			<div class="comment">
+				<p>{{ picture.COMMENT|linebreaksbr }}</p>
+			</div>
+        </div>
+    {% endfor %}
+{% endblock %}
